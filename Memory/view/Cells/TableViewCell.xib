@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="106" id="3KI-yG-U4J" customClass="TableViewCell" customModule="Memory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3KI-yG-U4J" id="hXq-rB-T6q">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3T-hI-uXV">
+                        <rect key="frame" x="70" y="42.5" width="274" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaM-co-d8B">
+                        <rect key="frame" x="70" y="74" width="274" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf3-Dj-yNi">
+                        <rect key="frame" x="70" y="11" width="274" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wf3-Dj-yNi" firstAttribute="centerX" secondItem="hXq-rB-T6q" secondAttribute="centerX" id="79O-Gs-wqg"/>
+                    <constraint firstItem="r3T-hI-uXV" firstAttribute="centerX" secondItem="hXq-rB-T6q" secondAttribute="centerX" id="8Wh-2s-HhN"/>
+                    <constraint firstItem="wf3-Dj-yNi" firstAttribute="top" secondItem="hXq-rB-T6q" secondAttribute="top" constant="11" id="9M3-oj-5jf"/>
+                    <constraint firstItem="r3T-hI-uXV" firstAttribute="leading" secondItem="hXq-rB-T6q" secondAttribute="leading" constant="70" id="Bjk-K0-m4v"/>
+                    <constraint firstAttribute="trailing" secondItem="yaM-co-d8B" secondAttribute="trailing" constant="70" id="E5f-5D-if0"/>
+                    <constraint firstAttribute="trailing" secondItem="r3T-hI-uXV" secondAttribute="trailing" constant="70" id="KBK-lc-qG4"/>
+                    <constraint firstAttribute="trailing" secondItem="wf3-Dj-yNi" secondAttribute="trailing" constant="70" id="KUh-FV-Qf2"/>
+                    <constraint firstItem="r3T-hI-uXV" firstAttribute="top" secondItem="wf3-Dj-yNi" secondAttribute="bottom" constant="10.5" id="Mq3-J1-LER"/>
+                    <constraint firstAttribute="bottom" secondItem="yaM-co-d8B" secondAttribute="bottom" constant="10.5" id="NjX-yH-lyk"/>
+                    <constraint firstItem="yaM-co-d8B" firstAttribute="leading" secondItem="hXq-rB-T6q" secondAttribute="leading" constant="70" id="PYs-es-eUf"/>
+                    <constraint firstItem="wf3-Dj-yNi" firstAttribute="leading" secondItem="hXq-rB-T6q" secondAttribute="leading" constant="70" id="XO4-xy-NlE"/>
+                    <constraint firstItem="yaM-co-d8B" firstAttribute="centerX" secondItem="hXq-rB-T6q" secondAttribute="centerX" id="c6S-DK-7tD"/>
+                    <constraint firstItem="r3T-hI-uXV" firstAttribute="centerY" secondItem="hXq-rB-T6q" secondAttribute="centerY" id="gqQ-ts-FGl"/>
+                    <constraint firstItem="yaM-co-d8B" firstAttribute="top" secondItem="r3T-hI-uXV" secondAttribute="bottom" constant="10.5" id="odH-Af-YSV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="counterLabel" destination="r3T-hI-uXV" id="Okn-KR-Elq"/>
+                <outlet property="dateLabel" destination="wf3-Dj-yNi" id="Jn3-xS-BSC"/>
+                <outlet property="timeLabel" destination="yaM-co-d8B" id="EfB-0y-JJm"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
